@@ -4,9 +4,6 @@ import dayjs from "dayjs";
 import { MantineReactTable, MRT_ColumnDef, useMantineReactTable } from "mantine-react-table";
 import templateData from '@/dummy_data/gettemplatedata.json'
 import { getBaseTableConfig } from "@/config/getBaseTableConfig";
-const getDateTime = (dateString: string) => {
-  return dayjs(dateString).format("MMM D, YYYY h:mm:ss A");
-};
 
 type TemplateItem = {
   id: string;
@@ -54,27 +51,6 @@ const columns: MRT_ColumnDef<TemplateItem>[] = [
     accessorKey: "user_inference_monitoring_id",
     header: "Monitoring ID",
     size: 177,
-  },
-
-  {
-    accessorKey: "created_at",
-    header: "Created At",
-    size: 185,
-    Cell: (props) => (
-      <Text className="text-body-14">
-        {getDateTime(props.renderedCellValue as string)}
-      </Text>
-    ),
-  },
-  {
-    accessorKey: "updated_at",
-    header: "Updated At",
-    size: 185,
-    Cell: (props) => (
-      <Text className="text-body-14">
-        {getDateTime(props.renderedCellValue as string)}
-      </Text>
-    ),
   },
 ];
 

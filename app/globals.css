@@ -1,33 +1,352 @@
+@import "@mantine/core/styles.layer.css";
+@import "@mantine/dates/styles.layer.css";
+@import "mantine-react-table/styles.css";
+
+/* @layer tailwind {
+} */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
+/**
+ * 
+ * Please refer to
+ * [Tailwind Directives](https://tailwindcss.com/docs/functions-and-directives) before
+ * reading this further.
+ * 
+ * Color Guidelines:
+ *
+ * 1. Color variables should use RGB numbers as values. Other standard CSS formats will
+ *    not work.
+ *
+ *    Valid and invalid examples:
+ *    ✅ --color-background: 200, 150, 120
+ *    ❌ --color-background: rgb(200, 150, 120)
+ *    ❌ --color-background: rgba(200, 150, 120, 1)
+ *    ❌ --color-background: #C89678
+ *    ❌ --color-background: #C89678FF
+ *
+ * 2. Theme classes must be defined within the `base` layer. The default layer/theme class
+ *    is `:root`.
+ *
+ *    @layer base {
+ *      :root { ... }
+ *      .neon-theme { ... }
+ *    }
+ *
+ * 3. Each variable must have a value defined in all theme classes. Additionally, default
+ *    value of the variables must be set in `:root` layer.
+ *
+ */
 
-@media (prefers-color-scheme: dark) {
+@layer base {
   :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+    /****************************** Palette Colors *************************************/
+
+    /* Brand */
+    --color-brand-50: 235, 239, 255;
+    --color-brand-100: 219, 225, 255;
+    --color-brand-200: 190, 200, 255;
+    --color-brand-300: 151, 163, 255;
+    --color-brand-400: 110, 112, 255;
+    --color-brand-500: 95, 91, 255;
+    --color-brand-600: 80, 52, 255;
+    --color-brand-700: 63, 32, 226;
+    --color-brand-800: 50, 29, 182;
+    --color-brand-900: 45, 32, 143;
+    --color-brand-950: 28, 19, 83;
+
+    /* Supporting Green */
+    --color-supporting-green-50: 234, 255, 247;
+    --color-supporting-green-100: 205, 254, 234;
+    --color-supporting-green-200: 160, 250, 218;
+    --color-supporting-green-300: 99, 242, 199;
+    --color-supporting-green-400: 37, 226, 176;
+    --color-supporting-green-500: 3, 200, 154;
+    --color-supporting-green-600: 0, 164, 127;
+    --color-supporting-green-700: 0, 131, 105;
+    --color-supporting-green-800: 0, 103, 84;
+    --color-supporting-green-900: 0, 85, 71;
+    --color-supporting-green-950: 0, 48, 41;
+
+    /* Supporting Yellow */
+    --color-supporting-yellow-50: 255, 251, 235;
+    --color-supporting-yellow-100: 255, 243, 198;
+    --color-supporting-yellow-200: 255, 229, 136;
+    --color-supporting-yellow-300: 255, 210, 74;
+    --color-supporting-yellow-400: 249, 156, 7;
+    --color-supporting-yellow-500: 249, 156, 7;
+    --color-supporting-yellow-600: 221, 116, 2;
+    --color-supporting-yellow-700: 183, 81, 6;
+    --color-supporting-yellow-800: 122, 50, 13;
+    --color-supporting-yellow-900: 122, 50, 13;
+    --color-supporting-yellow-950: 70, 25, 2;
+
+    /* Supporting Red */
+    --color-supporting-red-50: 255, 241, 242;
+    --color-supporting-red-100: 255, 227, 230;
+    --color-supporting-red-200: 255, 204, 210;
+    --color-supporting-red-300: 255, 162, 175;
+    --color-supporting-red-400: 254, 110, 132;
+    --color-supporting-red-500: 248, 68, 100;
+    --color-supporting-red-600: 229, 25, 71;
+    --color-supporting-red-700: 193, 15, 59;
+    --color-supporting-red-800: 138, 17, 55;
+    --color-supporting-red-900: 138, 17, 55;
+    --color-supporting-red-950: 77, 4, 24;
+
+    /* Neutrals */
+    --color-neutrals-50: 255, 255, 255;
+    --color-neutrals-100: 246, 248, 252;
+    --color-neutrals-200: 241, 244, 249;
+    --color-neutrals-300: 226, 232, 240;
+    --color-neutrals-400: 203, 212, 225;
+    --color-neutrals-500: 148, 163, 184;
+    --color-neutrals-600: 100, 116, 139;
+    --color-neutrals-700: 71, 85, 105;
+    --color-neutrals-800: 39, 54, 75;
+    --color-neutrals-900: 30, 42, 59;
+    --color-neutrals-950: 17, 15, 34;
+
+    /******************************* Theme Colors **************************************/
+
+    /* Text variants */
+    --color-text-primary: var(--color-neutrals-900);
+    --color-text-secondary: var(--color-neutrals-600);
+    --color-text-inverted: var(--color-neutrals-50);
+
+    /* Accent colors */
+    --color-accent-green: var(--color-supporting-green-500);
+    --color-accent-yellow: var(--color-supporting-yellow-500);
+    --color-accent-red: var(--color-supporting-red-500);
+
+    /* Surface/background colors */
+    --color-background-primary: var(--color-neutrals-100);
+    --color-background-divider: var(--color-neutrals-300);
+  }
+
+  p,
+  span {
+    @apply text-body-14;
+  }
+
+  h1 {
+    @apply text-title-40;
+  }
+
+  h2 {
+    @apply text-title-32;
+  }
+
+  h3 {
+    @apply text-title-24;
+  }
+
+  h4 {
+    @apply text-title-20;
+  }
+
+  h5 {
+    @apply text-title-16;
+  }
+
+  h6 {
+    @apply text-title-14;
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+@layer tailwindPreflight {
+  blockquote,
+  dl,
+  dd,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  hr,
+  figure,
+  p,
+  pre {
+    margin: 0;
+  }
+
+  ol,
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  img,
+  svg,
+  video,
+  canvas,
+  audio,
+  iframe,
+  embed,
+  object {
+    display: block;
+    vertical-align: middle;
+  }
+
+  img,
+  video {
+    max-width: 100%;
+    height: auto;
+  }
+
+  /**
+   *
+   * Source:
+   * https://github.com/sindresorhus/modern-normalize/blob/main/modern-normalize.css
+   *
+   */
+  *,
+  ::before,
+  ::after {
+    box-sizing: border-box;
+  }
+
+  body {
+    margin: 0; /* Remove the margin in all browsers. */
+  }
+
+  /**
+  1. Remove text indentation from table contents in Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=999088, https://bugs.webkit.org/show_bug.cgi?id=201297)
+  2. Correct table border color inheritance in Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=935729, https://bugs.webkit.org/show_bug.cgi?id=195016)
+  */
+
+  table {
+    text-indent: 0; /* 1 */
+    border-color: inherit; /* 2 */
+  }
+
+  /**
+  Remove the inheritance of text transform in Edge and Firefox.
+  */
+
+  button,
+  select {
+    text-transform: none;
+  }
+
+  /**
+  Correct the inability to style clickable types in iOS and Safari.
+  */
+
+  button,
+  [type="button"],
+  [type="reset"],
+  [type="submit"] {
+    -webkit-appearance: button;
+  }
+
+  /**
+  Remove the inner border and padding in Firefox.
+  */
+
+  ::-moz-focus-inner {
+    border-style: none;
+    padding: 0;
+  }
+
+  /**
+  Restore the focus styles unset by the previous rule.
+  */
+
+  :-moz-focusring {
+    outline: 1px dotted ButtonText;
+  }
+
+  /**
+  Restore the focus styles unset by the previous rule.
+  */
+
+  :-moz-focusring {
+    outline: 1px dotted ButtonText;
+  }
+
+  /**
+  Remove the additional ':invalid' styles in Firefox.
+  See: https://github.com/mozilla/gecko-dev/blob/2f9eacd9d3d995c937b4251a5557d95d494c9be1/layout/style/res/forms.css#L728-L737
+  */
+
+  :-moz-ui-invalid {
+    box-shadow: none;
+  }
+
+  /**
+  Remove the padding so developers are not caught out when they zero out 'fieldset' elements in all browsers.
+  */
+
+  legend {
+    padding: 0;
+  }
+
+  /**
+  Add the correct vertical alignment in Chrome and Firefox.
+  */
+
+  progress {
+    vertical-align: baseline;
+  }
+
+  /**
+  Correct the cursor style of increment and decrement buttons in Safari.
+  */
+
+  ::-webkit-inner-spin-button,
+  ::-webkit-outer-spin-button {
+    height: auto;
+  }
+
+  /**
+  1. Correct the odd appearance in Chrome and Safari.
+  2. Correct the outline style in Safari.
+  */
+
+  [type="search"] {
+    -webkit-appearance: textfield; /* 1 */
+    outline-offset: -2px; /* 2 */
+  }
+
+  /**
+  Remove the inner padding in Chrome and Safari on macOS.
+  */
+
+  ::-webkit-search-decoration {
+    -webkit-appearance: none;
+  }
+
+  /**
+  1. Correct the inability to style clickable types in iOS and Safari.
+  2. Change font properties to 'inherit' in Safari.
+  */
+
+  ::-webkit-file-upload-button {
+    -webkit-appearance: button; /* 1 */
+    font: inherit; /* 2 */
+  }
+
+  /*
+  Interactive
+  ===========
+  */
+
+  /*
+  Add the correct display in Chrome and Safari.
+  */
+
+  summary {
+    display: list-item;
+  }
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
+@layer defaults {
+  a {
+    text-decoration: none;
+    color: inherit;
   }
 }

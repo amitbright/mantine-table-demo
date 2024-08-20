@@ -1,0 +1,112 @@
+[
+    {
+        "id": "response-8ec011b1-0d49-45ca-91ce-5ef04cd29e05",
+        "response_text": "The founder of Meta Platforms, Inc., formerly known as Facebook, Inc., is Mark Zuckerberg. He co-founded the company along with his college roommates Eduardo Saverin, Andrew McCollum, Dustin Moskovitz, and Chris Hughes while they were students at Harvard University. The company was initially launched as \"TheFacebook\" in 2004.",
+        "source_id": "api-input-9a3068bd-1362-41fe-8256-43fa8dd9f6ee",
+        "candidate_model_id": "cand-model-934c3f12-0374-4705-9fb0-9de02f94a551",
+        "input_id": "input-251ea8a3-d1f6-4d03-8382-77403c096a09",
+        "user_inference_monitoring_id": "user-inference-monitoring-4e92847f-d603-4d95-83d3-1a01f9d90df2",
+        "user_id": "user-0171be89-43f0-4d03-ac8f-fa8370d98b39",
+        "created_at": "2024-08-19T20:07:27.778+00:00",
+        "updated_at": "2024-08-19T20:07:27.778+00:00"
+    },
+    {
+        "id": "response-e0c06343-04a1-468c-92e5-95f9f2c98458",
+        "response_text": "Mark Zuckerberg",
+        "source_id": "api-input-c8efd107-34cd-4a57-9d8b-5ccaccf74ab8",
+        "candidate_model_id": "cand-model-f826e602-b6ac-4115-8265-bfdc47e16717",
+        "input_id": "input-251ea8a3-d1f6-4d03-8382-77403c096a09",
+        "user_inference_monitoring_id": "user-inference-monitoring-f11b4b5d-1dae-465a-96f8-106c20ee5fd3",
+        "user_id": "user-0171be89-43f0-4d03-ac8f-fa8370d98b39",
+        "created_at": "2024-08-19T20:07:21.799+00:00",
+        "updated_at": "2024-08-19T20:07:21.799+00:00"
+    },
+    {
+        "id": "response-35e4efa6-0f41-40d6-8969-0c3b979da79a",
+        "response_text": "Google was founded by Larry Page and Sergey Brin. They started the company while they were Ph.D. students at Stanford University. The company was officially incorporated on September 4, 1998.",
+        "source_id": "api-input-7b9240a5-c70a-4f61-b747-05a20a985825",
+        "candidate_model_id": "cand-model-934c3f12-0374-4705-9fb0-9de02f94a551",
+        "input_id": "input-acacc114-43d2-454a-a1ed-269328e0525b",
+        "user_inference_monitoring_id": "user-inference-monitoring-6d76271e-a018-4081-bfd0-ce7c2a059047",
+        "user_id": "user-0171be89-43f0-4d03-ac8f-fa8370d98b39",
+        "created_at": "2024-08-19T20:07:17.644+00:00",
+        "updated_at": "2024-08-19T20:07:17.644+00:00"
+    },
+    {
+        "id": "response-24197d9c-72df-41aa-95f7-38bac65cdfdd",
+        "response_text": "Larry Page and Sergey Brin",
+        "source_id": "api-input-3a760f6e-fa39-4dd1-adf5-e94d4a6a7f4c",
+        "candidate_model_id": "cand-model-f826e602-b6ac-4115-8265-bfdc47e16717",
+        "input_id": "input-acacc114-43d2-454a-a1ed-269328e0525b",
+        "user_inference_monitoring_id": "user-inference-monitoring-3ecf0b14-a931-45d0-a6f1-b1c87088b950",
+        "user_id": "user-0171be89-43f0-4d03-ac8f-fa8370d98b39",
+        "created_at": "2024-08-19T20:07:13.244+00:00",
+        "updated_at": "2024-08-19T20:07:13.244+00:00"
+    },
+    {
+        "id": "response-d2a50217-0f15-443f-b4e6-19f88c60fcea",
+        "response_text": "Larry Page and Sergey Brin",
+        "source_id": "api-input-5588fcc0-320e-4d37-9f56-99d51b51a79e",
+        "candidate_model_id": "cand-model-f826e602-b6ac-4115-8265-bfdc47e16717",
+        "input_id": "input-b903f26a-b4d3-4cea-9e8d-cf69e4987048",
+        "user_inference_monitoring_id": "user-inference-monitoring-a40f2699-68e0-48e2-80d7-4e85a5a17114",
+        "user_id": "user-0171be89-43f0-4d03-ac8f-fa8370d98b39",
+        "created_at": "2024-08-19T18:47:33.615+00:00",
+        "updated_at": "2024-08-19T18:47:33.615+00:00"
+    },
+    {
+        "id": "response-2a1537bf-ee4c-42a7-b9b8-6aa00aa16387",
+        "response_text": "Mark Zuckerberg",
+        "source_id": "api-input-12be7725-fe35-47cb-aa34-1b324b168669",
+        "candidate_model_id": "cand-model-f826e602-b6ac-4115-8265-bfdc47e16717",
+        "input_id": "input-2b0aa058-1932-4fc4-85b0-d4e81eb71dcf",
+        "user_inference_monitoring_id": "user-inference-monitoring-b19b110d-b16a-4f3a-9a80-18c1cf54a585",
+        "user_id": "user-0171be89-43f0-4d03-ac8f-fa8370d98b39",
+        "created_at": "2024-08-19T18:47:24.915+00:00",
+        "updated_at": "2024-08-19T18:47:24.915+00:00"
+    },
+    {
+        "id": "response-2936865f-680b-465a-92c6-e9b2dde9cff6",
+        "response_text": "Black is a color",
+        "source_id": "api-input-1e2acaf5-6c4f-4204-90ce-9ede4d051fec",
+        "candidate_model_id": "cand-model-00540ec1-829b-47eb-9174-0d38875ab167",
+        "input_id": "input-c5d1f5f7-bb8c-4ce5-be7e-3dbfbec6fe06",
+        "user_inference_monitoring_id": "user-inference-monitoring-b4764c1d-49f5-4b35-945e-1b346f37c618",
+        "user_id": "user-0171be89-43f0-4d03-ac8f-fa8370d98b39",
+        "created_at": "2024-08-18T08:07:59.703+00:00",
+        "updated_at": "2024-08-18T08:07:59.703+00:00"
+    },
+    {
+        "id": "response-0f62d340-ea2d-4127-9fb9-a9999786b2ca",
+        "response_text": "Hello there, how may I assist you today?",
+        "source_id": "api-input-dc04fdc0-0385-48fb-8eef-c7cbe3bb7998",
+        "candidate_model_id": "cand-model-00540ec1-829b-47eb-9174-0d38875ab167",
+        "input_id": "input-b7463cb3-08c5-409d-94e3-7ca16dc5f58f",
+        "user_inference_monitoring_id": "user-inference-monitoring-42568b84-1f28-4bac-ac2e-0449d41c3cb6",
+        "user_id": "user-0171be89-43f0-4d03-ac8f-fa8370d98b39",
+        "created_at": "2024-08-18T07:40:20.937+00:00",
+        "updated_at": "2024-08-18T07:40:20.937+00:00"
+    },
+    {
+        "id": "response-2345f53d-4377-4859-a6dd-640494bf997a",
+        "response_text": "Hello there, how may I assist you today?",
+        "source_id": "api-input-614a761f-ac38-4be7-bac7-f830be9ac98b",
+        "candidate_model_id": "cand-model-00540ec1-829b-47eb-9174-0d38875ab167",
+        "input_id": "input-d1842df4-7559-4d69-a9d3-cbe1fdc405c6",
+        "user_inference_monitoring_id": "user-inference-monitoring-e33f9a2d-7077-4fa3-8268-b45a8449537c",
+        "user_id": "user-0171be89-43f0-4d03-ac8f-fa8370d98b39",
+        "created_at": "2024-08-18T07:39:55.818+00:00",
+        "updated_at": "2024-08-18T07:39:55.818+00:00"
+    },
+    {
+        "id": "response-b5e8927c-a3c8-4d29-945e-74618fa80e28",
+        "response_text": "Hello there, how may I assist you today?",
+        "source_id": "api-input-8d5c8ecf-e6a2-44e4-959e-35e7486b2f9f",
+        "candidate_model_id": "cand-model-00540ec1-829b-47eb-9174-0d38875ab167",
+        "input_id": "input-0174c7f0-85a6-420d-a324-97a519e8a055",
+        "user_inference_monitoring_id": "user-inference-monitoring-99450789-9c06-4dac-8d05-f39f37020ddb",
+        "user_id": "user-0171be89-43f0-4d03-ac8f-fa8370d98b39",
+        "created_at": "2024-08-17T22:39:53.980+00:00",
+        "updated_at": "2024-08-17T22:39:53.981+00:00"
+    }
+]

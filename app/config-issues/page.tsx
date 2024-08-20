@@ -79,13 +79,13 @@ const columns: MRT_ColumnDef<TemplateItem>[] = [
 ];
 
 export default function Home() {
+
   const tableConfig = getBaseTableConfig<TemplateItem>();
 
   const table = useMantineReactTable<TemplateItem>({
     columns: columns,
     data: templateData,
     ...tableConfig
-   
   });
 
   return (
@@ -94,5 +94,3 @@ export default function Home() {
     </main>
   );
 }
-
-
